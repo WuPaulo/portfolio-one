@@ -617,13 +617,40 @@ li {
 
 .aboutContainer .aboutButton button {
   padding: 10px 20px;
-}
-
-.aboutContainer .aboutButton button:hover,
-.aboutContainer .aboutButton button:focus {
+  background: none;
+  position: relative;
+  border: 1px solid black;
   cursor: pointer;
 }
 
 .aboutContainer .aboutButton .projectButton {
   margin-left: 50px;
+}
+
+.aboutContainer .aboutButton button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, black 50%, transparent 50%);
+  z-index: -1;
+}
+
+.aboutContainer .aboutButton button,
+.aboutContainer .aboutButton button:after {
+  background-size: 300%;
+  background-position: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutContainer .aboutButton button:hover,
+.aboutContainer .aboutButton button:focus,
+.aboutContainer .aboutButton button:focus:after,
+.aboutContainer .aboutButton button:hover:after {
+  background-position: 0;
+  cursor: pointer;
+  color: white;
 }
