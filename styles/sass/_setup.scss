@@ -22,9 +22,7 @@ figure,
 main {
   display: block;
 }
-figure {
-  margin: 1em 40px;
-}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -99,7 +97,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -131,9 +129,7 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
+
 legend {
   box-sizing: border-box;
   color: inherit;
@@ -244,7 +240,8 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
-p {
+p,
+span {
   font-family: "Montserrat", sans-serif;
 }
 

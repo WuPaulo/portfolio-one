@@ -1,0 +1,23 @@
+.skills {
+  background: rgb(238, 237, 234);
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    padding: 50px 0;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 40px 20px;
+    place-items: stretch center;
+  }
+}
