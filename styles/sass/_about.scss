@@ -1,0 +1,70 @@
+.about {
+  margin: 150px auto;
+}
+
+.aboutContainer {
+  display: flex;
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .aboutImage {
+    margin-left: 40px;
+
+    img {
+      height: auto;
+      min-width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .socialsContainer {
+    margin: 40px 0;
+    a {
+      margin-right: 2rem;
+      font-size: 2rem;
+    }
+
+    .fa-twitter {
+      color: #00acee;
+    }
+
+    .fa-github {
+      color: black;
+    }
+
+    .fa-linkedin {
+      color: #0077b5;
+      background: white;
+    }
+
+    .fa-envelope {
+      color: black;
+    }
+  }
+
+  .aboutButton {
+    button {
+      padding: 10px 20px;
+    }
+
+    button:hover,
+    button:focus {
+      cursor: pointer;
+    }
+    .projectButton {
+      margin-left: 50px;
+    }
+  }
+}
