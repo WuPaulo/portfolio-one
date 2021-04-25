@@ -16,6 +16,7 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
@@ -30,10 +31,10 @@
             </div>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <!-- <div class="mobileLinks"></div> -->
@@ -41,10 +42,10 @@
       </nav>
       <nav class="mobile">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="menuButtonContainer">
@@ -69,8 +70,8 @@
       <!-- about me section -->
       <section class="about" id="about">
         <div class="aboutContainer wrapper">
-          <div class="aboutText">
-            <div class="aboutMe">
+          <div class="aboutText" data-aos="fade-right" data-aos-duration="1300">
+            <div class="aboutMe" data-aos="fade-down" data-aos-duration="1300">
               <h2>About me</h2>
             </div>
             <p>
@@ -99,7 +100,7 @@
               >
             </div>
           </div>
-          <div class="aboutImage">
+          <div class="aboutImage" data-aos="fade-left" data-aos-duration="1300">
             <img src="./assets//paulo.png" alt="" />
           </div>
         </div>
@@ -107,9 +108,9 @@
       <!-- skills section -->
       <section class="skills" id="skills">
         <div class="skillsContainer wrapper">
-          <h2>Skills & Tools</h2>
+          <h2 data-aos="fade-down" data-aos-duration="1300">Skills & Tools</h2>
           <div class="skillIconContainer">
-            <ul>
+            <ul data-aos="fade-up" data-aos-duration="1300">
               <li class="iconContainer">
                 <img src="./assets/html.svg" alt="" class="skillIcon" />
                 <p>HTML5</p>
@@ -171,7 +172,85 @@
           </div>
         </div>
       </section>
+      <section class="projects" id="projects">
+        <div class="projectOutter wrapper">
+          <h2 class="projectHeading">Projects</h2>
+          <div class="projectContainer">
+            <div class="projectImage One"></div>
+            <div class="projectText">
+              <h2>Title</h2>
+              <h3>HTML5 | CSS3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, beatae. Eum eius fugiat ipsum similique eos nam unde,
+                magnam dicta possimus temporibus nisi cum libero, expedita
+                dignissimos sed optio? Minima.
+              </p>
+              <a class="projectButton" href="#"
+                ><button>View Project</button></a
+              >
+              <a class="projectButton" href="#"><button>Github</button></a>
+            </div>
+          </div>
+          <div class="projectContainer">
+            <div class="projectImage Two"></div>
+            <div class="projectText">
+              <h2>Title</h2>
+              <h3>HTML5 | CSS3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, beatae. Eum eius fugiat ipsum similique eos nam unde,
+                magnam dicta possimus temporibus nisi cum libero, expedita
+                dignissimos sed optio? Minima.
+              </p>
+              <a class="projectButton" href="#"
+                ><button>View Project</button></a
+              >
+              <a class="projectButton" href="#"><button>Github</button></a>
+            </div>
+          </div>
+          <div class="projectContainer">
+            <div class="projectImage Three"></div>
+            <div class="projectText">
+              <h2>Title</h2>
+              <h3>HTML5 | CSS3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, beatae. Eum eius fugiat ipsum similique eos nam unde,
+                magnam dicta possimus temporibus nisi cum libero, expedita
+                dignissimos sed optio? Minima.
+              </p>
+              <a class="projectButton" href="#"
+                ><button>View Project</button></a
+              >
+              <a class="projectButton" href="#"><button>Github</button></a>
+            </div>
+          </div>
+          <div class="projectContainer">
+            <div class="projectImage Four"></div>
+            <div class="projectText">
+              <h2>Title</h2>
+              <h3>HTML5 | CSS3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, beatae. Eum eius fugiat ipsum similique eos nam unde,
+                magnam dicta possimus temporibus nisi cum libero, expedita
+                dignissimos sed optio? Minima.
+              </p>
+              <a class="projectButton" href="#"
+                ><button>View Project</button></a
+              >
+              <a class="projectButton" href="#"><button>Github</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
