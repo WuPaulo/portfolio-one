@@ -12,6 +12,7 @@ header {
   h1 {
     font-weight: 700;
     font-size: 5rem;
+    color: $white;
   }
 
   // navigation bar styling
@@ -60,7 +61,7 @@ header {
   //header main text styling
 
   .introduction {
-    padding-top: 7rem;
+    padding-top: 8rem;
 
     p {
       width: 50%;

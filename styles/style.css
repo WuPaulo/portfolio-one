@@ -13,6 +13,7 @@ header {
 header h1 {
   font-weight: 700;
   font-size: 5rem;
+  color: #fff;
 }
 
 header .navLinksContainer .navLinks {
@@ -66,7 +67,7 @@ header .navLinksContainer a:focus:after {
 }
 
 header .introduction {
-  padding-top: 7rem;
+  padding-top: 8rem;
 }
 
 header .introduction p {
@@ -277,10 +278,6 @@ header .introduction .cursorFlash {
 
 .footerContainer a {
   color: black;
-}
-
-.footerContainer p {
-  margin-bottom: 50px;
 }
 
 html {
@@ -555,6 +552,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background: #fff;
 }
 
 h1,
@@ -610,6 +608,7 @@ li {
 
 .aboutContainer .aboutText span {
   font-weight: 600;
+  color: #035950;
 }
 
 .aboutContainer .aboutText p {
@@ -618,6 +617,8 @@ li {
 }
 
 .aboutContainer .aboutText h2 {
+  display: inline-block;
+  border-bottom: 3px solid #035950;
   font-size: 2rem;
   margin-bottom: 50px;
 }
@@ -651,7 +652,6 @@ li {
 
 .aboutContainer .socialsContainer .fa-linkedin {
   color: #0077b5;
-  background: white;
 }
 
 .aboutContainer .socialsContainer .fa-envelope {
@@ -662,8 +662,10 @@ li {
   padding: 10px 20px;
   background: none;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #035950;
   cursor: pointer;
+  color: #035950;
+  border-radius: 10px;
 }
 
 .aboutContainer .aboutButton .projectButton {
@@ -677,8 +679,9 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(45deg, black 50%, transparent 50%);
+  background: linear-gradient(45deg, #035950 50%, transparent 50%);
   z-index: -1;
+  border-radius: 10px;
 }
 
 .aboutContainer .aboutButton button,
@@ -695,17 +698,19 @@ li {
 .aboutContainer .aboutButton button:hover:after {
   background-position: 0;
   cursor: pointer;
-  color: white;
+  color: #fff;
 }
 
 .skills {
-  background: #eeedea;
   text-align: center;
+  background: #e6e4e4;
 }
 
 .skills h2 {
   font-size: 2rem;
-  padding: 50px 0;
+  margin: 100px 0;
+  display: inline-block;
+  border-bottom: 4px solid #035950;
 }
 
 .skills img {
@@ -714,13 +719,13 @@ li {
 }
 
 .skills ul {
-  padding: 0 0 100px 0;
+  padding: 50px 0 100px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: auto;
-  grid-gap: 10px 20px;
+  grid-gap: 50px 20px;
   place-items: stretch center;
 }
 
@@ -728,12 +733,17 @@ li {
   padding: 100px 0 50px 0;
 }
 
+.projects h2 {
+  display: inline-block;
+  border-bottom: 3px solid #035950;
+}
+
 .projects .projectHeading {
   font-size: 2rem;
 }
 
 .projects .projectContainer {
-  border: 2px solid black;
+  border: 2px solid #035950;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,9 +762,11 @@ li {
   padding: 10px 20px;
   background: none;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #035950;
   cursor: pointer;
   margin: 20px 20px 20px 0;
+  color: #035950;
+  border-radius: 10px;
 }
 
 .projects button:after {
@@ -764,8 +776,9 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(45deg, black 50%, transparent 50%);
+  background: linear-gradient(45deg, #035950 50%, transparent 50%);
   z-index: -1;
+  border-radius: 10px;
 }
 
 .projects button,
@@ -782,7 +795,7 @@ li {
 .projects button:hover:after {
   background-position: 0;
   cursor: pointer;
-  color: white;
+  color: #fff;
 }
 
 .projects .projectText {
@@ -811,7 +824,7 @@ li {
   font-size: 0.8em;
   font-weight: 600;
   margin-right: 15px;
-  background: #d1cfcf;
+  background: #e6e4e4;
   padding: 10px 15px;
   border-radius: 20px;
   font-family: "Open Sans", sans-serif;
@@ -843,12 +856,14 @@ li {
 
 .contact {
   padding: 100px 0;
-  background: #eeedea;
+  background: #e6e4e4;
 }
 
 .contact h2 {
   margin-bottom: 100px;
   font-size: 2rem;
+  display: inline-block;
+  border-bottom: 3px solid #035950;
 }
 
 .contact .contactContainer {
@@ -877,6 +892,11 @@ li {
   padding-bottom: 50px;
 }
 
+.contact p a {
+  color: #035950;
+  font-weight: 700;
+}
+
 .contact .socialsContainer a {
   margin-right: 2rem;
   font-size: 2rem;
@@ -892,7 +912,6 @@ li {
 
 .contact .socialsContainer .fa-linkedin {
   color: #0077b5;
-  background: white;
 }
 
 .contact .socialsContainer .fa-envelope {
@@ -907,7 +926,7 @@ li {
 .contact input[type="email"],
 .contact textarea {
   padding: 20px;
-  border: 2px solid black;
+  border: 2px solid #035950;
   border-radius: 10px;
 }
 
@@ -919,6 +938,12 @@ li {
 .contact .submitContainer button {
   border-radius: 10px;
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 1px solid #035950;
   cursor: pointer;
+}
+
+.contact .submitContainer button:hover,
+.contact .submitContainer button:focus {
+  background: #035950;
+  color: white;
 }

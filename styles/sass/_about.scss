@@ -12,6 +12,7 @@
 
     span {
       font-weight: 600;
+      color: $primary;
     }
 
     p {
@@ -20,6 +21,8 @@
     }
 
     h2 {
+      display: inline-block;
+      border-bottom: 3px solid $primary;
       font-size: 2rem;
       margin-bottom: 50px;
     }
@@ -52,7 +55,6 @@
 
     .fa-linkedin {
       color: #0077b5;
-      background: white;
     }
 
     .fa-envelope {
@@ -65,8 +67,10 @@
       padding: 10px 20px;
       background: none;
       position: relative;
-      border: 1px solid black;
+      border: 1px solid $primary;
       cursor: pointer;
+      color: $primary;
+      border-radius: 10px;
     }
 
     .projectButton {
@@ -80,8 +84,9 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(45deg, rgb(0, 0, 0) 50%, transparent 50%);
+      background: linear-gradient(45deg, $primary 50%, transparent 50%);
       z-index: -1;
+      border-radius: 10px;
     }
 
     button,
@@ -97,7 +102,7 @@
     button:hover:after {
       background-position: 0;
       cursor: pointer;
-      color: white;
+      color: $white;
     }
   }
 }

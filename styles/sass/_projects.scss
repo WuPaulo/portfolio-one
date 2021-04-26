@@ -1,12 +1,16 @@
 .projects {
   padding: 100px 0 50px 0;
 
+  h2 {
+    display: inline-block;
+    border-bottom: 3px solid $primary;
+  }
   .projectHeading {
     font-size: 2rem;
   }
 
   .projectContainer {
-    border: 2px solid black;
+    border: 2px solid $primary;
     border-radius: 20px;
     display: flex;
     margin: 125px 0;
@@ -23,9 +27,11 @@
     padding: 10px 20px;
     background: none;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid $primary;
     cursor: pointer;
     margin: 20px 20px 20px 0;
+    color: $primary;
+    border-radius: 10px;
   }
 
   button:after {
@@ -35,8 +41,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(45deg, rgb(0, 0, 0) 50%, transparent 50%);
+    background: linear-gradient(45deg, $primary 50%, transparent 50%);
     z-index: -1;
+    border-radius: 10px;
   }
 
   button,
@@ -52,7 +59,7 @@
   button:hover:after {
     background-position: 0;
     cursor: pointer;
-    color: white;
+    color: $white;
   }
 
   .projectText {
@@ -78,7 +85,7 @@
       font-size: 0.8em;
       font-weight: 600;
       margin-right: 15px;
-      background: rgb(209, 207, 207);
+      background: rgb(230, 228, 228);
       padding: 10px 15px;
       border-radius: 20px;
       font-family: "Open Sans", sans-serif;
