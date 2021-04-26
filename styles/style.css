@@ -247,6 +247,42 @@ header .introduction .cursorFlash {
   }
 }
 
+.footerContainer {
+  display: block;
+  text-align: center;
+}
+
+.footerContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 30px 0;
+}
+
+.footerContainer .footerBottom {
+  padding: 25px 0;
+}
+
+.footerContainer .footerHeading {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.footerContainer a {
+  color: black;
+}
+
+.footerContainer p {
+  margin-bottom: 50px;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -256,6 +292,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 article,
@@ -543,8 +580,13 @@ li {
   list-style: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .about {
-  margin: 150px auto;
+  padding: 150px 0;
 }
 
 .aboutContainer {
@@ -561,6 +603,9 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .aboutContainer .aboutText span {
@@ -574,7 +619,7 @@ li {
 
 .aboutContainer .aboutText h2 {
   font-size: 2rem;
-  margin: 0;
+  margin-bottom: 50px;
 }
 
 .aboutContainer .aboutImage {
@@ -680,7 +725,7 @@ li {
 }
 
 .projects {
-  margin: 150px auto;
+  padding: 100px 0 50px 0;
 }
 
 .projects .projectHeading {
@@ -796,6 +841,11 @@ li {
   background-position: center;
 }
 
+.contact {
+  padding: 100px 0;
+  background: #eeedea;
+}
+
 .contact h2 {
   margin-bottom: 100px;
   font-size: 2rem;
@@ -809,6 +859,7 @@ li {
 
 .contact .contactContainer .contactText {
   width: 40%;
+  margin-right: 20px;
 }
 
 .contact .contactContainer form {
@@ -822,8 +873,8 @@ li {
           flex-direction: column;
 }
 
-.contact .socialsContainer {
-  margin: 40px 0;
+.contact p {
+  padding-bottom: 50px;
 }
 
 .contact .socialsContainer a {
@@ -869,4 +920,5 @@ li {
   border-radius: 10px;
   padding: 10px 20px;
   border: 1px solid black;
+  cursor: pointer;
 }

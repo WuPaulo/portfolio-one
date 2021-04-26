@@ -1,5 +1,5 @@
 .about {
-  margin: 150px auto;
+  padding: 150px 0;
 }
 
 .aboutContainer {
@@ -8,6 +8,7 @@
   .aboutText {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     span {
       font-weight: 600;
@@ -20,7 +21,7 @@
 
     h2 {
       font-size: 2rem;
-      margin: 0;
+      margin-bottom: 50px;
     }
   }
 

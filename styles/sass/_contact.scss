@@ -1,4 +1,7 @@
 .contact {
+  padding: 100px 0;
+  background: rgb(238, 237, 234);
+
   h2 {
     margin-bottom: 100px;
     font-size: 2rem;
@@ -9,6 +12,7 @@
 
     .contactText {
       width: 40%;
+      margin-right: 20px;
     }
 
     form {
@@ -18,8 +22,11 @@
     }
   }
 
+  p {
+    padding-bottom: 50px;
+  }
+
   .socialsContainer {
-    margin: 40px 0;
     a {
       margin-right: 2rem;
       font-size: 2rem;
@@ -63,6 +70,7 @@
       border-radius: 10px;
       padding: 10px 20px;
       border: 1px solid black;
+      cursor: pointer;
     }
   }
 }
