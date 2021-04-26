@@ -6,7 +6,7 @@
   }
 
   .projectContainer {
-    background: rgb(209, 205, 205);
+    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     margin: 125px 0;
@@ -19,6 +19,42 @@
     border-bottom-left-radius: 20px;
   }
 
+  button {
+    padding: 10px 20px;
+    background: none;
+    position: relative;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 20px 20px 20px 0;
+  }
+
+  button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 50%, transparent 50%);
+    z-index: -1;
+  }
+
+  button,
+  button:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s;
+  }
+
+  button:hover,
+  button:focus,
+  button:focus:after,
+  button:hover:after {
+    background-position: 0;
+    cursor: pointer;
+    color: white;
+  }
+
   .projectText {
     width: calc(55% - 40px);
     margin-left: 40px;
@@ -26,31 +62,49 @@
     h2 {
       margin: 20px 0;
     }
+
     h3 {
       font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  .toolsList {
+    display: flex;
+    padding: 0;
+
+    li {
+      margin: 20px 15px 20px 0px;
+      font-size: 0.8em;
+      font-weight: 600;
+      margin-right: 15px;
+      background: rgb(209, 207, 207);
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-family: "Open Sans", sans-serif;
     }
   }
 
   .One {
-    background-image: url("/assets/Screenshot_345.png");
+    background-image: url("/assets/road-radar.png");
     background-size: cover;
     background-position: center;
   }
 
   .Two {
-    background-image: url("/assets/Screenshot_346.png");
+    background-image: url("/assets/snack.png");
     background-size: cover;
     background-position: center;
   }
 
   .Three {
-    background-image: url("/assets/Screenshot_347.png");
+    background-image: url("/assets/pokemon.png");
     background-size: cover;
     background-position: center;
   }
 
   .Four {
-    background-image: url("/assets/Screenshot_348.png");
+    background-image: url("/assets/delicious.png");
     background-size: cover;
     background-position: center;
   }
