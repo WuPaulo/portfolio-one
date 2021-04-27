@@ -1,0 +1,43 @@
+@media (max-width: 1100px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .aboutImage,
+  .aboutContainer .socialsContainer,
+  .aboutButton {
+    text-align: center;
+  }
+
+  .aboutImage {
+    margin-top: 60px;
+  }
+
+  .about {
+    padding: 100px 0;
+  }
+
+  .skills h2 {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuButtonContainer {
+    display: block;
+  }
+
+  .navLinksContainer {
+    display: none;
+  }
+
+  .navScrolled {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}

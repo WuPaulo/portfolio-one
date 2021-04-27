@@ -228,23 +228,3 @@ header {
     opacity: 0;
   }
 }
-
-@media (max-width: 768px) {
-  .menuButtonContainer {
-    display: block;
-  }
-
-  .navLinksContainer {
-    display: none;
-  }
-
-  .navScrolled {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .mobile {
-    display: none;
-  }
-}
