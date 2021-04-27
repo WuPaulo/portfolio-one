@@ -772,6 +772,8 @@ li {
 .skills img {
   width: 80px;
   height: 80px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .skills ul {
