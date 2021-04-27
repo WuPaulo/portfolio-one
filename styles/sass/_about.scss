@@ -12,7 +12,7 @@
 
     span {
       font-weight: 600;
-      color: black;
+      color: #222;
     }
 
     p {
@@ -22,7 +22,7 @@
 
     h2 {
       display: inline-block;
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid #222;
       font-size: 2rem;
       margin-bottom: 50px;
     }
@@ -39,7 +39,7 @@
       height: auto;
       min-width: 100%;
       border-radius: 20px;
-      box-shadow: 20px 20px black;
+      box-shadow: 20px 20px #222;
     }
   }
 
@@ -56,9 +56,9 @@
       padding: 10px 20px;
       background: none;
       position: relative;
-      border: 1px solid black;
+      border: 1px solid #222;
       cursor: pointer;
-      color: black;
+      color: #222;
       border-radius: 10px;
     }
 
@@ -73,7 +73,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(45deg, black 50%, transparent 50%);
+      background: linear-gradient(45deg, #222 50%, transparent 50%);
       z-index: -1;
       border-radius: 10px;
     }
