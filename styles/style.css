@@ -7,6 +7,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 header h1 {
@@ -306,13 +307,17 @@ header .introduction .cursorFlash {
   padding: 30px 0;
 }
 
+.footerContainer .footerTop a {
+  margin-right: 20px;
+}
+
 .footerContainer .footerBottom {
   padding: 25px 0;
 }
 
-.footerContainer .footerHeading {
-  padding-bottom: 10px;
-  font-weight: 600;
+.footerContainer h4 {
+  padding-bottom: 20px;
+  font-weight: 700;
 }
 
 .footerContainer a {
@@ -623,6 +628,27 @@ li {
   padding: 0;
 }
 
+.socialsContainer .fa-twitter {
+  color: #00acee;
+}
+
+.socialsContainer .fa-github {
+  color: black;
+}
+
+.socialsContainer .fa-linkedin {
+  color: #0077b5;
+}
+
+.socialsContainer .fa-envelope {
+  color: black;
+}
+
+.socialsContainer a:hover,
+.socialsContainer a:focus {
+  border-bottom: 2px solid black;
+}
+
 .about {
   padding: 150px 0;
 }
@@ -663,6 +689,10 @@ li {
   margin-bottom: 50px;
 }
 
+.aboutContainer .aboutText p:nth-child(3) {
+  padding: 40px 0;
+}
+
 .aboutContainer .aboutImage {
   margin-left: 40px;
 }
@@ -682,22 +712,6 @@ li {
 .aboutContainer .socialsContainer a {
   margin-right: 2rem;
   font-size: 2rem;
-}
-
-.aboutContainer .socialsContainer .fa-twitter {
-  color: #00acee;
-}
-
-.aboutContainer .socialsContainer .fa-github {
-  color: black;
-}
-
-.aboutContainer .socialsContainer .fa-linkedin {
-  color: #0077b5;
-}
-
-.aboutContainer .socialsContainer .fa-envelope {
-  color: black;
 }
 
 .aboutContainer .aboutButton button {
@@ -769,6 +783,11 @@ li {
   grid-auto-rows: auto;
   grid-gap: 50px 20px;
   place-items: stretch center;
+}
+
+.skills img:hover {
+  width: 150px;
+  height: 150px;
 }
 
 .projects {
@@ -859,6 +878,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projects .toolsList li {
@@ -949,22 +970,6 @@ li {
   font-size: 2rem;
 }
 
-.contact .socialsContainer .fa-twitter {
-  color: #00acee;
-}
-
-.contact .socialsContainer .fa-github {
-  color: black;
-}
-
-.contact .socialsContainer .fa-linkedin {
-  color: #0077b5;
-}
-
-.contact .socialsContainer .fa-envelope {
-  color: black;
-}
-
 .contact input {
   margin-bottom: 50px;
 }
@@ -985,7 +990,7 @@ li {
 .contact .submitContainer button {
   border-radius: 10px;
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 2px solid black;
   cursor: pointer;
 }
 

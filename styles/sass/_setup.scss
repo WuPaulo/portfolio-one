@@ -261,3 +261,26 @@ li {
   margin: 0;
   padding: 0;
 }
+
+.socialsContainer {
+  .fa-twitter {
+    color: #00acee;
+  }
+
+  .fa-github {
+    color: black;
+  }
+
+  .fa-linkedin {
+    color: #0077b5;
+  }
+
+  .fa-envelope {
+    color: black;
+  }
+}
+
+.socialsContainer a:hover,
+.socialsContainer a:focus {
+  border-bottom: 2px solid black;
+}
