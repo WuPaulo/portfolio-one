@@ -19,6 +19,7 @@ header {
     width: 100%;
     background: transparent;
     z-index: 50;
+    transition: background 350ms ease-in;
   }
 
   // navigation bar styling
@@ -90,7 +91,7 @@ header {
 .menuButton {
   position: absolute;
   right: 2%;
-  top: 1%;
+  top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,6 +154,7 @@ header {
 
   ul {
     text-align: center;
+    margin: 100px 0;
   }
 
   li {
@@ -160,11 +162,20 @@ header {
     padding: 50px;
 
     a {
-      color: #08fdd8;
+      color: white;
       text-decoration: none;
       font-size: 1.4rem;
       font-weight: 600;
     }
+
+    a:hover,
+    a:focus {
+      color: black;
+    }
+  }
+
+  li:hover {
+    background: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -186,7 +197,6 @@ header {
   color: black;
   background: white;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-  padding: 10px 0;
 
   a {
     color: black;
@@ -194,7 +204,7 @@ header {
 
   a:hover,
   a:focus {
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
   }
 }
 
