@@ -7,7 +7,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 header h1 {
@@ -16,8 +15,15 @@ header h1 {
   color: #fff;
 }
 
+header nav {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  z-index: 50;
+}
+
 header .navLinksContainer .navLinks {
-  padding-top: 1rem;
+  padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +46,7 @@ header .navLinksContainer .navLinks ul li {
 }
 
 header .navLinksContainer a {
+  font-weight: 600;
   position: relative;
 }
 
@@ -67,10 +74,11 @@ header .navLinksContainer a:focus:after {
 }
 
 header .introduction {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 
 header .introduction p {
+  margin-top: 2.5rem;
   width: 50%;
 }
 
@@ -102,7 +110,7 @@ header .introduction .cursorFlash {
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  z-index: 3;
+  z-index: 100;
 }
 
 .menuBurger {
@@ -193,6 +201,23 @@ header .introduction .cursorFlash {
           animation: bouncing 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
+.navScrolled {
+  color: black;
+  background: white;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.navScrolled a {
+  color: black;
+}
+
+.navScrolled a:hover,
+.navScrolled a:focus {
+  border-bottom: 3px solid black;
+}
+
 @-webkit-keyframes flashing {
   0% {
     opacity: 0;
@@ -238,6 +263,9 @@ header .introduction .cursorFlash {
     display: block;
   }
   .navLinksContainer {
+    display: none;
+  }
+  .navScrolled {
     display: none;
   }
 }
@@ -608,7 +636,7 @@ li {
 
 .aboutContainer .aboutText span {
   font-weight: 600;
-  color: #035950;
+  color: black;
 }
 
 .aboutContainer .aboutText p {
@@ -618,7 +646,7 @@ li {
 
 .aboutContainer .aboutText h2 {
   display: inline-block;
-  border-bottom: 3px solid #035950;
+  border-bottom: 3px solid black;
   font-size: 2rem;
   margin-bottom: 50px;
 }
@@ -631,6 +659,8 @@ li {
   height: auto;
   min-width: 100%;
   border-radius: 20px;
+  -webkit-box-shadow: 20px 20px black;
+          box-shadow: 20px 20px black;
 }
 
 .aboutContainer .socialsContainer {
@@ -662,9 +692,9 @@ li {
   padding: 10px 20px;
   background: none;
   position: relative;
-  border: 1px solid #035950;
+  border: 1px solid black;
   cursor: pointer;
-  color: #035950;
+  color: black;
   border-radius: 10px;
 }
 
@@ -679,7 +709,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(45deg, #035950 50%, transparent 50%);
+  background: linear-gradient(45deg, black 50%, transparent 50%);
   z-index: -1;
   border-radius: 10px;
 }
@@ -710,7 +740,7 @@ li {
   font-size: 2rem;
   margin: 100px 0;
   display: inline-block;
-  border-bottom: 4px solid #035950;
+  border-bottom: 4px solid black;
 }
 
 .skills img {
@@ -735,7 +765,7 @@ li {
 
 .projects h2 {
   display: inline-block;
-  border-bottom: 3px solid #035950;
+  border-bottom: 3px solid black;
 }
 
 .projects .projectHeading {
@@ -743,7 +773,7 @@ li {
 }
 
 .projects .projectContainer {
-  border: 2px solid #035950;
+  border: 2px solid black;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,10 +792,10 @@ li {
   padding: 10px 20px;
   background: none;
   position: relative;
-  border: 1px solid #035950;
+  border: 1px solid black;
   cursor: pointer;
   margin: 20px 20px 20px 0;
-  color: #035950;
+  color: black;
   border-radius: 10px;
 }
 
@@ -776,7 +806,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(45deg, #035950 50%, transparent 50%);
+  background: linear-gradient(45deg, black 50%, transparent 50%);
   z-index: -1;
   border-radius: 10px;
 }
