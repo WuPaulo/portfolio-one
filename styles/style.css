@@ -612,6 +612,10 @@ header .introduction .cursorFlash {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .aboutContainer .aboutText {
@@ -641,14 +645,14 @@ header .introduction .cursorFlash {
 }
 
 .aboutContainer .aboutImage {
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .aboutContainer .aboutImage img {
   height: auto;
   border-radius: 20px;
-  -webkit-box-shadow: -20px 20px #222;
-          box-shadow: -20px 20px #222;
+  -webkit-box-shadow: 20px 20px #222;
+          box-shadow: 20px 20px #222;
 }
 
 .aboutContainer .socialsContainer {
@@ -722,7 +726,7 @@ header .introduction .cursorFlash {
 }
 
 .skills ul {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 50px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -1016,7 +1020,7 @@ footer {
     margin-right: 0px;
   }
   .aboutContainer .socialsContainer {
-    margin: 10px 0 20px 0;
+    margin: 10px 0 40px 0;
   }
   .aboutContainer .aboutText p {
     padding-bottom: 20px;
@@ -1050,6 +1054,9 @@ footer {
 @media (max-width: 768px) {
   h1 {
     font-size: 4rem;
+  }
+  header .introduction p {
+    width: 90%;
   }
   .skills ul {
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -1115,8 +1122,21 @@ footer {
   header h1 {
     font-size: 4rem;
   }
+  .mobile ul {
+    margin: 150px 0;
+  }
+  .mobile li a {
+    font-size: 1.2rem;
+  }
+  .about {
+    padding: 75px 0 20px 0;
+  }
+  .about h2 {
+    margin-bottom: 0px;
+  }
   .aboutContainer .aboutText h2,
   .skills h2,
+  .about h2,
   .projects .projectHeading,
   .projects h2,
   .contact h2 {
@@ -1124,6 +1144,13 @@ footer {
   }
   .aboutContainer .aboutImage img {
     width: 80%;
+  }
+  .skills img:hover {
+    width: 100px;
+    height: 100px;
+  }
+  .projects {
+    padding: 50px 0 50px 0;
   }
   .projects .toolsList img {
     width: 30px;
@@ -1140,8 +1167,38 @@ footer {
   .projects .projectText {
     text-align: center;
   }
+  .projectText p {
+    text-align: left;
+  }
   .projects .projectContainer {
-    margin: 50px 0;
+    margin: 80px 0;
+  }
+  .projects .projectImage {
+    width: 100%;
+  }
+  .projects .projectImage {
+    padding: 40px 40px 20px 40px;
+  }
+  .footerContainer h4 {
+    font-size: 1rem;
+  }
+  .footerContainer ul p {
+    font-size: 0.8rem;
+  }
+  .footerBottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuBurger {
+    width: 40px;
+    height: 4px;
+  }
+  .menuBurger::before,
+  .menuBurger::after {
+    width: 40px;
+    height: 5px;
   }
 }
 
@@ -1164,5 +1221,18 @@ footer {
   }
   .projects .projectContainer {
     margin: 70px 0;
+  }
+  .aboutButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutContainer .aboutButton .projectButton {
+    margin-left: 0px;
+    margin-top: 20px;
   }
 }
