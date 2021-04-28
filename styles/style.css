@@ -341,6 +341,15 @@ header h1 {
   font-weight: 700;
   font-size: 5rem;
   color: #fff;
+  -webkit-animation: typing 5s steps(20) infinite;
+          animation: typing 5s steps(20) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header span {
+  -webkit-animation: flashing 1s infinite;
+          animation: flashing 1s infinite;
 }
 
 header nav {
@@ -555,6 +564,30 @@ header .introduction .cursorFlash {
 .navScrolled a:hover,
 .navScrolled a:focus {
   border-bottom: 2px solid black;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 8em;
+  }
+  100% {
+    width: 8em;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 8em;
+  }
+  100% {
+    width: 8em;
+  }
 }
 
 @-webkit-keyframes flashing {
@@ -971,6 +1004,13 @@ footer {
   color: white;
 }
 
+.footerContainer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
 .footerContainer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,7 +1026,9 @@ footer {
 }
 
 .footerContainer .footerTop a {
-  margin-right: 20px;
+  margin: 20px;
+  border-bottom: 2px solid transparent;
+  font-weight: 700;
 }
 
 .footerContainer .footerBottom {
@@ -999,8 +1041,9 @@ footer {
   font-size: 1.2rem;
 }
 
-.footerContainer a {
-  color: white;
+.footerContainer a:hover,
+.footerContainer a:focus {
+  border-bottom: 1px solid white;
 }
 
 @media (max-width: 1100px) {
@@ -1049,12 +1092,21 @@ footer {
   .contact h2 {
     margin-bottom: 50px;
   }
+  .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 876px) {
+  header h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
   header .introduction p {
     width: 90%;
   }
@@ -1107,6 +1159,15 @@ footer {
   .footerContainer ul p {
     padding-bottom: 20px;
   }
+  .footerNav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .aboutContainer .aboutImage {
+    margin-left: 0px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1115,12 +1176,15 @@ footer {
   }
 }
 
+@media (max-width: 710px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 586px) {
   .wrapper {
     width: 90%;
-  }
-  header h1 {
-    font-size: 4rem;
   }
   .mobile ul {
     margin: 150px 0;
@@ -1182,15 +1246,34 @@ footer {
   .footerContainer h4 {
     font-size: 1rem;
   }
+  .footerBottom p,
+  .footerNav,
   .footerContainer ul p {
     font-size: 0.8rem;
   }
-  .footerBottom p {
+  .contact .socialsContainer a,
+  .aboutContainer .socialsContainer a {
+    font-size: 1.6rem;
+  }
+  .aboutContainer .aboutText p,
+  .projectText p,
+  .contact p,
+  .skills p,
+  header .introduction p {
+    font-size: 0.8rem;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    padding: 10px;
     font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
   .menuBurger {
     width: 40px;
     height: 4px;
@@ -1203,8 +1286,19 @@ footer {
 }
 
 @media (max-width: 416px) {
+  header h1 {
+    font-size: 2rem;
+  }
   .about {
     padding: 50px 0;
+  }
+  .aboutContainer .aboutText h2,
+  .skills h2,
+  .about h2,
+  .projects .projectHeading,
+  .projects h2,
+  .contact h2 {
+    font-size: 1.2rem;
   }
   .skills ul {
     -ms-grid-columns: 1fr 1fr;
@@ -1234,5 +1328,8 @@ footer {
   .aboutContainer .aboutButton .projectButton {
     margin-left: 0px;
     margin-top: 20px;
+  }
+  .footerContainer .footerTop a {
+    margin: 10px;
   }
 }

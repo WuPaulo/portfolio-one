@@ -7,6 +7,11 @@ footer {
   text-align: center;
   color: white;
 
+  .footerNav {
+    display: flex;
+    text-align: center;
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -17,7 +22,9 @@ footer {
 
   .footerTop {
     a {
-      margin-right: 20px;
+      margin: 20px;
+      border-bottom: 2px solid transparent;
+      font-weight: 700;
     }
   }
 
@@ -31,7 +38,8 @@ footer {
     font-size: 1.2rem;
   }
 
-  a {
-    color: white;
+  a:hover,
+  a:focus {
+    border-bottom: 1px solid white;
   }
 }
