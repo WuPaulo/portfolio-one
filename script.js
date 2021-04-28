@@ -7,7 +7,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 const sectionOneOptions = {
-  rootMargin: "-300px 0px 0px 0px",
+  rootMargin: "-700px 0px 0px 0px",
 };
 
 const header = document.querySelector("nav");

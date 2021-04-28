@@ -12,26 +12,27 @@
   }
 
   .projectContainer {
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     margin: 125px 0;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
   }
 
   .projectImage {
-    width: 40%;
+    padding: 50px;
+    width: calc(50% - 50px);
     position: relative;
     overflow: hidden;
 
     img {
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
       max-width: 100%;
       transition: all 1s;
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: scale-down;
     }
   }
 
@@ -79,7 +80,7 @@
   }
 
   .projectText {
-    width: calc(55% - 40px);
+    width: calc(50% - 40px);
     margin-left: 40px;
 
     h2 {

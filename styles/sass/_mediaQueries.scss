@@ -3,14 +3,24 @@
     flex-direction: column;
   }
 
-  .aboutImage,
-  .aboutContainer .socialsContainer,
-  .aboutButton {
+  .aboutImage {
     text-align: center;
   }
 
   .aboutImage {
-    margin-top: 60px;
+    margin: 60px 0;
+  }
+
+  .aboutContainer .aboutImage {
+    margin-right: 0px;
+  }
+
+  .aboutContainer .socialsContainer {
+    margin: 10px 0 20px 0;
+  }
+
+  .aboutContainer .aboutText p {
+    padding-bottom: 20px;
   }
 
   .about {
@@ -18,11 +28,39 @@
   }
 
   .skills h2 {
-    margin: 20px 0;
+    margin: 50px 0;
+  }
+
+  .projectContainer {
+    flex-direction: column;
+  }
+
+  .projects .projectImage {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .projects .projectText {
+    width: 100%;
+    padding: 30px;
+    margin: 0;
+  }
+
+  .contact h2 {
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0 50px 0;
+  }
+
   .menuButtonContainer {
     display: block;
   }
@@ -34,10 +72,116 @@
   .navScrolled {
     display: none;
   }
+
+  .projectText p {
+    padding: 10px 0;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .contact .contactContainer .contactText {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .contact p {
+    padding-bottom: 30px;
+  }
+
+  .contact .contactContainer form {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .footerContainer ul {
+    flex-direction: column;
+  }
+
+  .footerContainer ul h4 {
+    padding-bottom: 10px;
+  }
+
+  .footerContainer ul p {
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) {
   .mobile {
     display: none;
+  }
+}
+
+@media (max-width: 586px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  .aboutContainer .aboutText h2,
+  .skills h2,
+  .projects .projectHeading,
+  .projects h2,
+  .contact h2 {
+    font-size: 1.4rem;
+  }
+
+  .aboutContainer .aboutImage img {
+    width: 80%;
+  }
+
+  .projects .toolsList img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .projects .toolsList li {
+    padding: 10px 15px;
+  }
+
+  .projects .toolsList {
+    justify-content: center;
+  }
+
+  .projects .projectText {
+    text-align: center;
+  }
+
+  .projects .projectContainer {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 416px) {
+  .about {
+    padding: 50px 0;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 20px;
+  }
+
+  .skills img {
+    width: 50px;
+    height: 50px;
+    grid-gap: 0px 20px;
+  }
+
+  .projects {
+    padding: 0;
+  }
+
+  .projects .projectContainer {
+    margin: 70px 0;
   }
 }

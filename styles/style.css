@@ -598,7 +598,14 @@ header .introduction .cursorFlash {
 }
 
 .about {
-  padding: 150px 0;
+  padding: 150px 0 100px 0;
+}
+
+.about h2 {
+  display: inline-block;
+  border-bottom: 3px solid #222;
+  font-size: 2rem;
+  margin-bottom: 60px;
 }
 
 .aboutContainer {
@@ -629,26 +636,19 @@ header .introduction .cursorFlash {
   line-height: 1.3rem;
 }
 
-.aboutContainer .aboutText h2 {
-  display: inline-block;
-  border-bottom: 3px solid #222;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
 .aboutContainer .aboutText p:nth-child(3) {
   padding: 30px 0;
 }
 
 .aboutContainer .aboutImage {
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .aboutContainer .aboutImage img {
   height: auto;
   border-radius: 20px;
-  -webkit-box-shadow: 20px 20px #222;
-          box-shadow: 20px 20px #222;
+  -webkit-box-shadow: -20px 20px #222;
+          box-shadow: -20px 20px #222;
 }
 
 .aboutContainer .socialsContainer {
@@ -756,7 +756,7 @@ header .introduction .cursorFlash {
 }
 
 .projects .projectContainer {
-  border-radius: 10px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,22 +766,23 @@ header .introduction .cursorFlash {
 }
 
 .projects .projectImage {
-  width: 40%;
+  padding: 50px;
+  width: calc(50% - 50px);
   position: relative;
   overflow: hidden;
 }
 
 .projects .projectImage img {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   max-width: 100%;
   -webkit-transition: all 1s;
   transition: all 1s;
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .projects .projectImage:hover img {
@@ -830,7 +831,7 @@ header .introduction .cursorFlash {
 }
 
 .projects .projectText {
-  width: calc(55% - 40px);
+  width: calc(50% - 40px);
   margin-left: 40px;
 }
 
@@ -937,7 +938,7 @@ header .introduction .cursorFlash {
 
 .contact .submitContainer {
   text-align: center;
-  margin: 20px;
+  margin-top: 30px;
 }
 
 .contact .submitContainer button {
@@ -976,7 +977,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   padding: 30px 0;
 }
 
@@ -991,6 +992,7 @@ footer {
 .footerContainer h4 {
   padding-bottom: 20px;
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .footerContainer a {
@@ -1004,23 +1006,56 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutImage,
-  .aboutContainer .socialsContainer,
-  .aboutButton {
+  .aboutImage {
     text-align: center;
   }
   .aboutImage {
-    margin-top: 60px;
+    margin: 60px 0;
+  }
+  .aboutContainer .aboutImage {
+    margin-right: 0px;
+  }
+  .aboutContainer .socialsContainer {
+    margin: 10px 0 20px 0;
+  }
+  .aboutContainer .aboutText p {
+    padding-bottom: 20px;
   }
   .about {
     padding: 100px 0;
   }
   .skills h2 {
-    margin: 20px 0;
+    margin: 50px 0;
+  }
+  .projectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectImage {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .projects .projectText {
+    width: 100%;
+    padding: 30px;
+    margin: 0;
+  }
+  .contact h2 {
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .skills ul {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0 50px 0;
+  }
   .menuButtonContainer {
     display: block;
   }
@@ -1030,10 +1065,104 @@ footer {
   .navScrolled {
     display: none;
   }
+  .projectText p {
+    padding: 10px 0;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contactContainer .contactText {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .contact p {
+    padding-bottom: 30px;
+  }
+  .contact .contactContainer form {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .footerContainer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerContainer ul h4 {
+    padding-bottom: 10px;
+  }
+  .footerContainer ul p {
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) {
   .mobile {
     display: none;
+  }
+}
+
+@media (max-width: 586px) {
+  .wrapper {
+    width: 90%;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  .aboutContainer .aboutText h2,
+  .skills h2,
+  .projects .projectHeading,
+  .projects h2,
+  .contact h2 {
+    font-size: 1.4rem;
+  }
+  .aboutContainer .aboutImage img {
+    width: 80%;
+  }
+  .projects .toolsList img {
+    width: 30px;
+    height: 30px;
+  }
+  .projects .toolsList li {
+    padding: 10px 15px;
+  }
+  .projects .toolsList {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .projectText {
+    text-align: center;
+  }
+  .projects .projectContainer {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 416px) {
+  .about {
+    padding: 50px 0;
+  }
+  .skills ul {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 20px;
+  }
+  .skills img {
+    width: 50px;
+    height: 50px;
+    grid-gap: 0px 20px;
+  }
+  .projects {
+    padding: 0;
+  }
+  .projects .projectContainer {
+    margin: 70px 0;
   }
 }
