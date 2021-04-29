@@ -342,7 +342,7 @@ header h1 {
 }
 
 header .firstButton button {
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 10px 20px;
   background: #222;
   border: 1px solid transparent;
@@ -355,6 +355,28 @@ header .firstButton button:focus {
   background: white;
   color: #222;
   border: 1px solid #222;
+}
+
+header .wordContainer {
+  margin: 20px 0;
+  position: absolute;
+}
+
+header .word {
+  overflow: hidden;
+  position: relative;
+  height: 65px;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #dfdfdf;
+}
+
+header .word li {
+  font-weight: 700;
+  padding: 0 5px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
 }
 
 header span {
@@ -569,6 +591,53 @@ header .introduction p {
 .navScrolled a:hover,
 .navScrolled a:focus {
   border-bottom: 2px solid black;
+}
+
+.flip2 {
+  -webkit-animation: flip2 5s cubic-bezier(0.2, 1, 0.3, 0.75) infinite;
+          animation: flip2 5s cubic-bezier(0.2, 1, 0.3, 0.75) infinite;
+}
+
+@-webkit-keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
 }
 
 @-webkit-keyframes flashing {
@@ -1158,6 +1227,9 @@ footer {
   header h1 {
     font-size: 3rem;
   }
+  header .word {
+    font-size: 1.6rem;
+  }
   .wrapper {
     width: 90%;
   }
@@ -1259,6 +1331,9 @@ footer {
 @media (max-width: 416px) {
   .about {
     padding: 50px 0;
+  }
+  header .word {
+    font-size: 1.2rem;
   }
   .aboutContainer .aboutText h2,
   .skills h2,

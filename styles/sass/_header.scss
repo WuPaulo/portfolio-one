@@ -18,7 +18,7 @@ header {
 
   .firstButton {
     button {
-      margin-top: 50px;
+      margin-top: 100px;
       padding: 10px 20px;
       background: #222;
       border: 1px solid transparent;
@@ -31,6 +31,27 @@ header {
       background: white;
       color: #222;
       border: 1px solid #222;
+    }
+  }
+
+  .wordContainer {
+    margin: 20px 0;
+    position: absolute;
+  }
+
+  .word {
+    overflow: hidden;
+    position: relative;
+    height: 65px;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(223, 223, 223);
+    li {
+      font-weight: 700;
+      padding: 0 5px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: block;
     }
   }
 
@@ -225,6 +246,31 @@ header {
   a:hover,
   a:focus {
     border-bottom: 2px solid black;
+  }
+}
+
+.flip2 {
+  animation: flip2 5s cubic-bezier(0.2, 1, 0.3, 0.75) infinite;
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
   }
 }
 
