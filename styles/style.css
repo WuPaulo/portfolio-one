@@ -325,7 +325,6 @@ header {
   background: url("/assets/stars.jpg") no-repeat center;
   min-height: 100vh;
   background-size: cover;
-  background-attachment: fixed;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
