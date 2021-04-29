@@ -14,9 +14,27 @@ header {
     font-weight: 700;
     font-size: 5rem;
     color: $white;
-    animation: typing 5s steps(20) infinite;
+    animation: typing 4.5s steps(20) infinite;
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  .aboutButton {
+    button {
+      margin-top: 50px;
+      padding: 10px 20px;
+      background: white;
+      border: 1px solid black;
+      cursor: pointer;
+      color: black;
+    }
+
+    button:hover,
+    button:focus {
+      background: #222;
+      color: white;
+      border: 1px solid #222;
+    }
   }
 
   span {
@@ -78,16 +96,12 @@ header {
   //header main text styling
 
   .introduction {
+    animation: showUp 2s forwards;
     padding-top: 10rem;
 
     p {
       margin-top: 2.5rem;
       width: 50%;
-    }
-
-    .cursorFlash {
-      animation: flashing 1s infinite;
-      font-weight: 400;
     }
   }
 }

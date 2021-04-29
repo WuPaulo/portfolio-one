@@ -279,13 +279,10 @@ h2,
 h3,
 h4,
 h5,
-a {
-  font-family: "Open Sans", sans-serif;
-}
-
+a,
 p,
 span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -341,10 +338,26 @@ header h1 {
   font-weight: 700;
   font-size: 5rem;
   color: #fff;
-  -webkit-animation: typing 5s steps(20) infinite;
-          animation: typing 5s steps(20) infinite;
+  -webkit-animation: typing 4.5s steps(20) infinite;
+          animation: typing 4.5s steps(20) infinite;
   overflow: hidden;
   white-space: nowrap;
+}
+
+header .aboutButton button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+}
+
+header .aboutButton button:hover,
+header .aboutButton button:focus {
+  background: #222;
+  color: white;
+  border: 1px solid #222;
 }
 
 header span {
@@ -413,18 +426,14 @@ header .navLinksContainer a:focus:after {
 }
 
 header .introduction {
+  -webkit-animation: showUp 2s forwards;
+          animation: showUp 2s forwards;
   padding-top: 10rem;
 }
 
 header .introduction p {
   margin-top: 2.5rem;
   width: 50%;
-}
-
-header .introduction .cursorFlash {
-  -webkit-animation: flashing 1s infinite;
-          animation: flashing 1s infinite;
-  font-weight: 400;
 }
 
 .menuButtonContainer {
@@ -659,9 +668,6 @@ header .introduction .cursorFlash {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .aboutContainer .aboutText span {
@@ -673,7 +679,7 @@ header .introduction .cursorFlash {
   line-height: 1.3rem;
 }
 
-.aboutContainer .aboutText p:nth-child(3) {
+.aboutContainer .aboutText p:nth-child(2) {
   padding: 30px 0;
 }
 
@@ -1258,8 +1264,7 @@ footer {
   .aboutContainer .aboutText p,
   .projectText p,
   .contact p,
-  .skills p,
-  header .introduction p {
+  .skills p {
     font-size: 0.8rem;
   }
   .contact input[type="text"],

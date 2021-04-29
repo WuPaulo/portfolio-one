@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,7 +23,7 @@
     <!-- header  -->
     <header class="header" id="header">
       <!-- navigation bar -->
-      <nav>
+      <nav data-aos="fade-down" data-aos-duration="1500">
         <div class="navLinksContainer wrapper">
           <div class="navLinks">
             <div class="logo">
@@ -53,13 +53,14 @@
           <div class="menuBurger"></div>
         </div>
       </div>
-      <div class="introduction wrapper">
-        <h1>HI, I'm Paulo..<span class="cursorFlash">|</span></h1>
+      <div class="introduction wrapper" data-aos="fade-up" data-aos-duration="1500">
+        <h1>HI, I'm Paulo...<span class="cursorFlash">|</span></h1>
         <p>
           A Web Developer with a passion in creating and design through the use
           of Front-End development in order to build accessible and responsive
-          web applications . . .<span class="cursorFlash">|</span>
+          web applications.
         </p>
+        <a class="aboutButton" href="#contact" ><button>Contact Me!</button></a>
       </div>
       <div class="downArrow">
         <a href="#about" class="fa fa-chevron-down"></a>
@@ -97,7 +98,7 @@
               <a href="mailto:paulowudev@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
             </div>
             <div class="aboutButton">
-              <a class="resumeButton" href="#"><button>My Resume</button></a>
+              <a class="resumeButton" href="./assets/resume.pdf" target="_blank"><button>My Resume</button></a>
               <a class="projectButton" href="#projects"
                 ><button>View Projects</button></a
               >
@@ -404,7 +405,7 @@
           <ul>
             <li>
               <h4>Email</h4>
-              <p>paulowudev@gmail.com</p>
+              <p><a href="mailto:paulowudev@gmail.com">paulowudev@gmail.com</a></p>
             </li>
             <div class="footerNav">
               <a href="#header">Home</a>
