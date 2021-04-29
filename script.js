@@ -49,7 +49,7 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
-const sectionTwo = document.querySelector(".downArrow");
+const sectionTwo = document.querySelector("header");
 
 const sectionTwoObserver = new IntersectionObserver(function (
   entries,
