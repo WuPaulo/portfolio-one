@@ -504,7 +504,12 @@
                 ></a>
               </div>
             </div>
-            <form action="" data-aos="fade-left" data-aos-duration="1200">
+            <form
+              action="POST"
+              data-netlify="true"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+            >
               <label for="name" class="sr-only"></label>
               <input
                 type="text"
@@ -531,6 +536,9 @@
                 placeholder="Message"
                 required
               ></textarea>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
               <div class="submitContainer">
                 <button type="submit">Send</button>
               </div>
