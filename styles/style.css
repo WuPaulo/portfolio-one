@@ -338,25 +338,21 @@ header h1 {
   font-weight: 700;
   font-size: 5rem;
   color: #fff;
-  -webkit-animation: typing 4.5s steps(20) infinite;
-          animation: typing 4.5s steps(20) infinite;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
-header .aboutButton button {
+header .firstButton button {
   margin-top: 50px;
   padding: 10px 20px;
-  background: white;
-  border: 1px solid black;
+  background: #222;
+  border: 1px solid transparent;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 
-header .aboutButton button:hover,
-header .aboutButton button:focus {
-  background: #222;
-  color: white;
+header .firstButton button:hover,
+header .firstButton button:focus {
+  background: white;
+  color: #222;
   border: 1px solid #222;
 }
 
@@ -391,6 +387,7 @@ header .navLinksContainer .navLinks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 0;
 }
 
 header .navLinksContainer .navLinks ul li {
@@ -573,30 +570,6 @@ header .introduction p {
 .navScrolled a:hover,
 .navScrolled a:focus {
   border-bottom: 2px solid black;
-}
-
-@-webkit-keyframes typing {
-  0% {
-    width: 0;
-  }
-  30% {
-    width: 8em;
-  }
-  100% {
-    width: 8em;
-  }
-}
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  30% {
-    width: 8em;
-  }
-  100% {
-    width: 8em;
-  }
 }
 
 @-webkit-keyframes flashing {
@@ -1106,15 +1079,12 @@ footer {
   }
 }
 
-@media (max-width: 876px) {
-  header h1 {
-    font-size: 4rem;
-  }
-}
-
 @media (max-width: 768px) {
   header .introduction p {
     width: 90%;
+  }
+  header h1 {
+    font-size: 4rem;
   }
   .skills ul {
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -1174,6 +1144,9 @@ footer {
   .aboutContainer .aboutImage {
     margin-left: 0px;
   }
+  .projects .projectText {
+    padding: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1182,13 +1155,10 @@ footer {
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 586px) {
   header h1 {
     font-size: 3rem;
   }
-}
-
-@media (max-width: 586px) {
   .wrapper {
     width: 90%;
   }
@@ -1276,9 +1246,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
   .menuBurger {
     width: 40px;
     height: 4px;
@@ -1291,9 +1258,6 @@ footer {
 }
 
 @media (max-width: 416px) {
-  header h1 {
-    font-size: 2rem;
-  }
   .about {
     padding: 50px 0;
   }

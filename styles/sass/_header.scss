@@ -14,25 +14,22 @@ header {
     font-weight: 700;
     font-size: 5rem;
     color: $white;
-    animation: typing 4.5s steps(20) infinite;
-    overflow: hidden;
-    white-space: nowrap;
   }
 
-  .aboutButton {
+  .firstButton {
     button {
       margin-top: 50px;
       padding: 10px 20px;
-      background: white;
-      border: 1px solid black;
+      background: #222;
+      border: 1px solid transparent;
       cursor: pointer;
-      color: black;
+      color: white;
     }
 
     button:hover,
     button:focus {
-      background: #222;
-      color: white;
+      background: white;
+      color: #222;
       border: 1px solid #222;
     }
   }
@@ -59,6 +56,7 @@ header {
 
       ul {
         display: flex;
+        padding: 10px 0;
 
         li {
           margin-left: 2rem;
@@ -228,20 +226,6 @@ header {
   a:hover,
   a:focus {
     border-bottom: 2px solid black;
-  }
-}
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-
-  30% {
-    width: 8em;
-  }
-
-  100% {
-    width: 8em;
   }
 }
 

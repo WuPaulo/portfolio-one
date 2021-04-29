@@ -26,5 +26,4 @@ const sectionOneObserver = new IntersectionObserver(function (
   });
 },
 sectionOneOptions);
-
-sectionOneObserver.observe(sectionOne);
+-sectionOneObserver.observe(sectionOne);

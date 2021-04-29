@@ -55,15 +55,13 @@
   }
 }
 
-@media (max-width: 876px) {
-  header h1 {
-    font-size: 4rem;
-  }
-}
-
 @media (max-width: 768px) {
   header .introduction p {
     width: 90%;
+  }
+
+  header h1 {
+    font-size: 4rem;
   }
 
   .skills ul {
@@ -128,6 +126,10 @@
   .aboutContainer .aboutImage {
     margin-left: 0px;
   }
+
+  .projects .projectText {
+    padding: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -136,13 +138,10 @@
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 586px) {
   header h1 {
     font-size: 3rem;
   }
-}
-
-@media (max-width: 586px) {
   .wrapper {
     width: 90%;
   }
@@ -249,10 +248,6 @@
 }
 
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-
   .menuBurger {
     width: 40px;
     height: 4px;
@@ -266,10 +261,6 @@
 }
 
 @media (max-width: 416px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
   .about {
     padding: 50px 0;
   }
