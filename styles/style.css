@@ -475,8 +475,6 @@ header .introduction p {
   width: 80px;
   height: 80px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   z-index: 100;
 }
 
@@ -605,8 +603,13 @@ header .introduction p {
 }
 
 .flip2 {
-  -webkit-animation: flip2 5s cubic-bezier(0.2, 1, 0.3, 0.75) infinite;
-          animation: flip2 5s cubic-bezier(0.2, 1, 0.3, 0.75) infinite;
+  -webkit-animation: flip2 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+          animation: flip2 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip3 {
+  -webkit-animation: flip3 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+          animation: flip3 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
 }
 
 @-webkit-keyframes flip2 {
@@ -641,6 +644,60 @@ header .introduction p {
     margin-top: -90px;
   }
   55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@-webkit-keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
     margin-top: 0px;
   }
   99.99% {
