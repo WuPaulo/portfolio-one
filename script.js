@@ -49,10 +49,6 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
-const sectionTwoOptions = {
-  rootMargin: "30px 0px 0px 0px",
-};
-
 const sectionTwo = document.querySelector(".downArrow");
 
 const sectionTwoObserver = new IntersectionObserver(function (
@@ -66,6 +62,5 @@ const sectionTwoObserver = new IntersectionObserver(function (
       menuBtn.classList.remove("buttonScrolled");
     }
   });
-},
-sectionTwoOptions);
+});
 sectionTwoObserver.observe(sectionTwo);

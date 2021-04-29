@@ -529,6 +529,8 @@ header .introduction p {
 }
 
 .mobile {
+  -webkit-transition: background 350ms ease-in;
+  transition: background 350ms ease-in;
   position: fixed;
   left: 100%;
   width: 100%;
