@@ -263,6 +263,14 @@
     width: 40px;
     height: 4px;
   }
+
+  .menuBurger::before {
+    transform: translateY(-14px);
+  }
+
+  .menuBurger::after {
+    transform: translateY(14px);
+  }
 }
 
 @media (max-width: 416px) {

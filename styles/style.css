@@ -482,12 +482,13 @@ header .introduction p {
 
 .menuBurger {
   width: 50px;
-  height: 5px;
+  height: 6px;
   background: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border: none;
   z-index: 3;
+  position: fixed;
 }
 
 .menuBurger::before,
@@ -495,7 +496,7 @@ header .introduction p {
   content: "";
   position: absolute;
   width: 50px;
-  height: 5px;
+  height: 6px;
   background: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -528,7 +529,7 @@ header .introduction p {
 }
 
 .mobile {
-  position: absolute;
+  position: fixed;
   left: 100%;
   width: 100%;
   min-height: 100vh;
@@ -590,6 +591,15 @@ header .introduction p {
 .navScrolled a:hover,
 .navScrolled a:focus {
   border-bottom: 2px solid black;
+}
+
+.buttonScrolled .menuBurger {
+  background: black;
+}
+
+.buttonScrolled .menuBurger::before,
+.buttonScrolled .menuBurger::after {
+  background: black;
 }
 
 .flip2 {
@@ -1019,6 +1029,10 @@ header .introduction p {
   border-radius: 10px;
 }
 
+.contact .field {
+  margin-top: 20px;
+}
+
 .contact .submitContainer {
   text-align: center;
   margin-top: 30px;
@@ -1324,6 +1338,14 @@ footer {
   .menuBurger::after {
     width: 40px;
     height: 4px;
+  }
+  .menuBurger::before {
+    -webkit-transform: translateY(-14px);
+            transform: translateY(-14px);
+  }
+  .menuBurger::after {
+    -webkit-transform: translateY(14px);
+            transform: translateY(14px);
   }
 }
 
