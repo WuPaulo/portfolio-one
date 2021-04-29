@@ -322,7 +322,7 @@ li {
 }
 
 header {
-  background-image: url("/assets/stars.jpg");
+  background: url("/assets/stars.jpg") no-repeat center;
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
