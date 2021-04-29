@@ -51,6 +51,10 @@ sectionOneObserver.observe(sectionOne);
 
 const sectionTwo = document.querySelector("header");
 
+const sectionTwoOptions = {
+  rootMargin: "-35px 0px 0px 0px",
+};
+
 const sectionTwoObserver = new IntersectionObserver(function (
   entries,
   sectionTwoObserver
@@ -62,5 +66,6 @@ const sectionTwoObserver = new IntersectionObserver(function (
       menuBtn.classList.remove("buttonScrolled");
     }
   });
-});
+},
+sectionTwoOptions);
 sectionTwoObserver.observe(sectionTwo);
