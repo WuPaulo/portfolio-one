@@ -50,7 +50,7 @@ sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
 const sectionTwoOptions = {
-  rootMargin: "0px 0px 0px 0px",
+  rootMargin: "10px 0px 0px 0px",
 };
 
 const sectionTwo = document.querySelector(".downArrow");
