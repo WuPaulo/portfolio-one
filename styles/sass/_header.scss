@@ -15,22 +15,28 @@ header {
     color: $white;
   }
 
-  .firstButton {
-    button {
-      margin-top: 100px;
-      padding: 10px 20px;
-      background: #222;
-      border: 1px solid transparent;
-      cursor: pointer;
-      color: white;
-    }
+  h2 {
+    cursor: pointer;
+  }
 
-    button:hover,
-    button:focus {
-      background: white;
-      color: #222;
-      border: 1px solid #222;
-    }
+  .firstButtonContainer {
+    margin-top: 100px;
+  }
+
+  .firstButton {
+    font-weight: 600;
+    padding: 10px 20px;
+    background: $primary;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+  }
+
+  .firstButton:hover,
+  .firstButton:focus {
+    background: white;
+    color: $primary;
+    border: 1px solid $primary;
   }
 
   .wordContainer {
@@ -140,6 +146,11 @@ header {
   height: 80px;
   cursor: pointer;
   z-index: 100;
+}
+
+.menuButton:hover,
+.menuButton:focus {
+  opacity: 0.5;
 }
 
 .menuBurger {

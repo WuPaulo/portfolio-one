@@ -3,7 +3,7 @@
     font-size: 2rem;
     margin: 100px 0;
     display: inline-block;
-    border-bottom: 3px solid #222;
+    border-bottom: 3px solid $primary;
   }
 
   img {
@@ -25,12 +25,7 @@
     place-items: stretch center;
   }
 
-  img:hover {
-    width: 150px;
-    height: 150px;
-  }
-
   p {
-    font-weight: 500;
+    font-weight: 600;
   }
 }

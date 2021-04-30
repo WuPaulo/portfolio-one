@@ -249,6 +249,7 @@ span {
 a {
   text-decoration: none;
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 li {
@@ -274,11 +275,15 @@ li {
   }
 
   .fa-envelope {
-    color: black;
+    color: $primary;
   }
 }
 
 .socialsContainer a:hover,
 .socialsContainer a:focus {
   border-bottom: 2px solid black;
+}
+
+button {
+  font-weight: 600;
 }

@@ -289,6 +289,7 @@ span {
 a {
   text-decoration: none;
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 li {
@@ -313,12 +314,16 @@ li {
 }
 
 .socialsContainer a .fa-envelope {
-  color: black;
+  color: #222;
 }
 
 .socialsContainer a:hover,
 .socialsContainer a:focus {
   border-bottom: 2px solid black;
+}
+
+button {
+  font-weight: 600;
 }
 
 header {
@@ -337,11 +342,19 @@ header {
 header h1 {
   font-weight: 700;
   font-size: 5rem;
-  color: #fff;
+  color: #f7f6f6;
 }
 
-header .firstButton button {
+header h2 {
+  cursor: pointer;
+}
+
+header .firstButtonContainer {
   margin-top: 100px;
+}
+
+header .firstButton {
+  font-weight: 600;
   padding: 10px 20px;
   background: #222;
   border: 1px solid transparent;
@@ -349,8 +362,8 @@ header .firstButton button {
   color: white;
 }
 
-header .firstButton button:hover,
-header .firstButton button:focus {
+header .firstButton:hover,
+header .firstButton:focus {
   background: white;
   color: #222;
   border: 1px solid #222;
@@ -476,6 +489,11 @@ header .introduction p {
   height: 80px;
   cursor: pointer;
   z-index: 100;
+}
+
+.menuButton:hover,
+.menuButton:focus {
+  opacity: 0.5;
 }
 
 .menuBurger {
@@ -851,7 +869,7 @@ header .introduction p {
 .aboutContainer .aboutButton button:hover:after {
   background-position: 0;
   cursor: pointer;
-  color: #fff;
+  color: #f7f6f6;
 }
 
 .skills h2 {
@@ -883,13 +901,8 @@ header .introduction p {
   place-items: stretch center;
 }
 
-.skills img:hover {
-  width: 150px;
-  height: 150px;
-}
-
 .skills p {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .projects {
@@ -898,7 +911,7 @@ header .introduction p {
 
 .projects h2 {
   display: inline-block;
-  border-bottom: 3px solid #222;
+  border-top: 2px solid #222;
   font-size: 1.8rem;
 }
 
@@ -978,7 +991,7 @@ header .introduction p {
 .projects button:hover:after {
   background-position: 0;
   cursor: pointer;
-  color: #fff;
+  color: #f7f6f6;
 }
 
 .projects .projectText {
@@ -1009,11 +1022,10 @@ header .introduction p {
   margin: 20px 15px 20px 0px;
   font-size: 0.8em;
   font-weight: 600;
-  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   padding: 15px 20px;
   border-radius: 20px;
   font-family: "Open Sans", sans-serif;
+  background: #f7f6f6;
 }
 
 .projects .toolsList img {
@@ -1061,7 +1073,7 @@ header .introduction p {
 }
 
 .contact p a {
-  color: black;
+  color: #222;
   font-weight: 700;
 }
 
@@ -1326,10 +1338,6 @@ footer {
   }
   .aboutContainer .aboutImage img {
     width: 80%;
-  }
-  .skills img:hover {
-    width: 100px;
-    height: 100px;
   }
   .projects {
     padding: 50px 0 50px 0;

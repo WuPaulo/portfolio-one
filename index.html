@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio site for Paulo Wu showcasing work and expriences along with contact information"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -16,7 +20,7 @@
       integrity="sha383-SZXxX3whJ79/gErwcOYf+zWLeJdY/qpuqC3cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./assets/alogo.png" />
     <title>Paulo Wu</title>
   </head>
   <body>
@@ -27,7 +31,7 @@
         <div class="navLinksContainer wrapper">
           <div class="navLinks">
             <div class="logo">
-              <h2>Paulo</h2>
+              <h2></h2>
             </div>
             <ul>
               <li><a href="#header">Home</a></li>
@@ -68,7 +72,9 @@
             </ul>
           </div>
         </div>
-        <a class="firstButton" href="#contact"><button>Contact Me!</button></a>
+        <div class="firstButtonContainer">
+          <a class="firstButton" href="#contact">Contact Me!</a>
+        </div>
       </div>
       <div class="downArrow">
         <a
@@ -257,6 +263,11 @@
               </p>
               <a
                 class="projectButton"
+                href="https://a-smarter-snack.netlify.app/"
+                ><button>Live</button></a
+              >
+              <a
+                class="projectButton"
                 href="https://github.com/WuPaulo/aSmarterSnack"
                 ><button>Github</button></a
               >
@@ -276,7 +287,7 @@
               /></a>
             </div>
             <div class="projectText">
-              <h2>Road Radar</h2>
+              <h2>Road-Radar</h2>
               <ul class="toolsList">
                 <li>
                   <img src="/assets/react.svg" alt="React logo" />
@@ -304,6 +315,11 @@
                 to allow the user to search for rest areas as well as live road
                 cameras according to certain locations withint Ontario.
               </p>
+              <a
+                class="projectButton"
+                href="https://christie-tran-paulo-wu-project-three.netlify.app"
+                ><button>Live</button></a
+              >
               <a
                 class="projectButton"
                 href="https://github.com/WuPaulo/christie-tran-paulo-wu-project-three"
@@ -358,6 +374,11 @@
               </p>
               <a
                 class="projectButton"
+                href="https://wupaulo.github.io/PokemonBaseStateBattle/"
+                ><button>Live</button></a
+              >
+              <a
+                class="projectButton"
                 href="https://github.com/WuPaulo/PokemonBaseStateBattle"
                 ><button>Github</button></a
               >
@@ -404,6 +425,11 @@
                 The web page was made with a responsive design while maintaining
                 the initial requirements.
               </p>
+              <a
+                class="projectButton"
+                href="https://wupaulo.github.io/Delicious-landing-page/"
+                ><button>Live</button></a
+              >
               <a
                 class="github"
                 href="https://github.com/WuPaulo/Delicious-landing-page/tree/features"
@@ -489,9 +515,8 @@
                 placeholder="Message"
                 required
               ></textarea>
-              <label for="spamFilter" class="sr-only">spam filter</label>
               <div class="field">
-                <div data-netlify-recaptcha="true" id="spamFilter"></div>
+                <div data-netlify-recaptcha="true"></div>
               </div>
               <div class="submitContainer">
                 <button type="submit">Send</button>
@@ -509,12 +534,12 @@
               <h3>Email</h3>
               <p>paulowudev@gmail.com</p>
             </li>
-            <div class="footerNav">
+            <li class="footerNav">
               <a href="#header">Home</a>
               <a href="#about">About</a>
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
-            </div>
+            </li>
             <li>
               <h3>Address</h3>
               <p>Toronto , Ontario</p>

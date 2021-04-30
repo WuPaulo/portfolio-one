@@ -3,7 +3,7 @@
 
   h2 {
     display: inline-block;
-    border-bottom: 3px solid #222;
+    border-bottom: 3px solid $primary;
     font-size: 2rem;
     margin-bottom: 60px;
   }
@@ -36,7 +36,7 @@
     img {
       height: auto;
       border-radius: 20px;
-      box-shadow: 20px 20px #222;
+      box-shadow: 20px 20px $primary;
     }
   }
 
@@ -53,9 +53,9 @@
       padding: 10px 20px;
       background: none;
       position: relative;
-      border: 1px solid #222;
+      border: 1px solid $primary;
       cursor: pointer;
-      color: #222;
+      color: $primary;
       border-radius: 10px;
     }
 
@@ -70,7 +70,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(45deg, #222 50%, transparent 50%);
+      background: linear-gradient(45deg, $primary 50%, transparent 50%);
       z-index: -1;
       border-radius: 10px;
     }

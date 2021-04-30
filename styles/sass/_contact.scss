@@ -6,7 +6,7 @@
     margin-bottom: 100px;
     font-size: 2rem;
     display: inline-block;
-    border-bottom: 3px solid #222;
+    border-bottom: 3px solid $primary;
   }
 
   .contactContainer {
@@ -28,13 +28,13 @@
     padding-bottom: 50px;
 
     a {
-      color: black;
+      color: $primary;
       font-weight: 700;
     }
 
     a:hover,
     a:focus {
-      border-bottom: 2px solid #222;
+      border-bottom: 2px solid $primary;
     }
   }
 
@@ -53,7 +53,7 @@
   input[type="email"],
   textarea {
     padding: 20px;
-    border: 2px solid #222;
+    border: 2px solid $primary;
     border-radius: 10px;
   }
 
@@ -68,7 +68,7 @@
     button {
       border-radius: 10px;
       padding: 10px 20px;
-      background: #222;
+      background: $primary;
       border: 1px solid transparent;
       cursor: pointer;
       color: white;
@@ -77,8 +77,8 @@
     button:hover,
     button:focus {
       background: white;
-      color: #222;
-      border: 1px solid #222;
+      color: $primary;
+      border: 1px solid $primary;
     }
   }
 }
