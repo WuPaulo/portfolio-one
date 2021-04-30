@@ -13,18 +13,23 @@ menuBtn.addEventListener("click", () => {
 
 headerLink.addEventListener("click", () => {
   mobile.classList.toggle("active");
+  menuBtn.classList.toggle("open");
 });
 aboutLink.addEventListener("click", () => {
   mobile.classList.toggle("active");
+  menuBtn.classList.toggle("open");
 });
 skillsLink.addEventListener("click", () => {
   mobile.classList.toggle("active");
+  menuBtn.classList.toggle("open");
 });
 projectsLink.addEventListener("click", () => {
   mobile.classList.toggle("active");
+  menuBtn.classList.toggle("open");
 });
 contactLink.addEventListener("click", () => {
   mobile.classList.toggle("active");
+  menuBtn.classList.toggle("open");
 });
 
 const sectionOneOptions = {

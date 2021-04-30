@@ -300,19 +300,19 @@ li {
   padding: 0;
 }
 
-.socialsContainer .fa-twitter {
+.socialsContainer a .fa-twitter {
   color: #00acee;
 }
 
-.socialsContainer .fa-github {
+.socialsContainer a .fa-github {
   color: black;
 }
 
-.socialsContainer .fa-linkedin {
+.socialsContainer a .fa-linkedin {
   color: #0077b5;
 }
 
-.socialsContainer .fa-envelope {
+.socialsContainer a .fa-envelope {
   color: black;
 }
 
@@ -780,8 +780,7 @@ header .introduction p {
 }
 
 .aboutContainer .aboutText span {
-  font-weight: 700;
-  color: #222;
+  font-weight: 600;
 }
 
 .aboutContainer .aboutText p {
