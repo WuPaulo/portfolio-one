@@ -353,26 +353,6 @@ header h2 {
   cursor: pointer;
 }
 
-header .firstButtonContainer {
-  margin-top: 100px;
-}
-
-header .firstButton {
-  font-weight: 600;
-  padding: 10px 20px;
-  background: #222;
-  border: 1px solid transparent;
-  cursor: pointer;
-  color: white;
-}
-
-header .firstButton:hover,
-header .firstButton:focus {
-  background: white;
-  color: #222;
-  border: 1px solid #222;
-}
-
 header .wordContainer {
   margin: 20px 0;
   position: absolute;
@@ -619,56 +599,9 @@ header .introduction p {
   background: black;
 }
 
-.flip2 {
-  -webkit-animation: flip2 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip2 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-
 .flip3 {
   -webkit-animation: flip3 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
           animation: flip3 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-
-@-webkit-keyframes flip2 {
-  0% {
-    margin-top: -180px;
-  }
-  5% {
-    margin-top: -90px;
-  }
-  50% {
-    margin-top: -90px;
-  }
-  55% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-@keyframes flip2 {
-  0% {
-    margin-top: -180px;
-  }
-  5% {
-    margin-top: -90px;
-  }
-  50% {
-    margin-top: -90px;
-  }
-  55% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
 }
 
 @-webkit-keyframes flip3 {
@@ -951,8 +884,8 @@ header .introduction p {
 }
 
 .projects .projectImage:hover img {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .projects button {

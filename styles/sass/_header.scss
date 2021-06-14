@@ -19,26 +19,6 @@ header {
     cursor: pointer;
   }
 
-  .firstButtonContainer {
-    margin-top: 100px;
-  }
-
-  .firstButton {
-    font-weight: 600;
-    padding: 10px 20px;
-    background: $primary;
-    border: 1px solid transparent;
-    cursor: pointer;
-    color: white;
-  }
-
-  .firstButton:hover,
-  .firstButton:focus {
-    background: white;
-    color: $primary;
-    border: 1px solid $primary;
-  }
-
   .wordContainer {
     margin: 20px 0;
     position: absolute;
